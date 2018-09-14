@@ -20,10 +20,10 @@ pipeline {
         }
         stage('SonarQube analysis') { 
          steps { 
-          sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar ' + 
+          sh 'mvn clean install sonar:sonar ' + 
           '-f pom.xml ' +
           '-Dsonar.projectKey=my:project ' +
-		  '-Dsonar.projectName=My project' +          
+		  '-Dsonar.projectName=My project ' +          
           '-Dsonar.language=java ' +
 		  '-Dsonar.modules=app-java, app-groovy, app-it ' +
           '-Dsonar.sources=src/main ' +
