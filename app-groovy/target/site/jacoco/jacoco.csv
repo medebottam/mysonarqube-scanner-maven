@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Groovy :: JaCoco Multi Modules :: App,innerclass,InnerClassExample,56,0,0,0,2,0,3,0,3,0
+Groovy :: JaCoco Multi Modules :: App,innerclass,InnerClassExample.ExampleInnerClass,37,0,0,0,1,0,3,0,3,0
+Groovy :: JaCoco Multi Modules :: App,example,Greeting,2,43,0,0,0,1,0,3,0,3
