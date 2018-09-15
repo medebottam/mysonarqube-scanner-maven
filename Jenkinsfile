@@ -22,7 +22,7 @@ pipeline {
          steps { 
           sh '/opt/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner ' + 
           '-Dsonar.projectKey=my:project ' +
-		  '-Dsonar.projectName=My project ' +          
+		  '-Dsonar.projectName=Myproject ' +          
           '-Dsonar.language=java ' +
 		  '-Dsonar.modules=app-java, app-groovy, app-it ' +
           '-Dsonar.sources=src/main ' +
