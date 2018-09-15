@@ -20,8 +20,7 @@ pipeline {
         }
         stage('SonarQube analysis') { 
          steps { 
-          sh 'mvn clean install sonar:sonar ' + 
-          '-f pom.xml ' +
+          sh '/opt/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner ' + 
           '-Dsonar.projectKey=my:project ' +
 		  '-Dsonar.projectName=My project ' +          
           '-Dsonar.language=java ' +
