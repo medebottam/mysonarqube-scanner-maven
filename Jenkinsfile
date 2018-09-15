@@ -20,14 +20,7 @@ pipeline {
         }
         stage('SonarQube analysis') { 
          steps { 
-          sh '/opt/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner ' + 
-          '-Dsonar.projectKey=my:project ' +
-		  '-Dsonar.projectName=Myproject ' +          
-          '-Dsonar.language=java ' +
-		  '-Dsonar.modules=app-java, app-groovy, app-it ' +
-          '-Dsonar.sources=src/main ' +
-          '-Dsonar.tests=src/test ' +
-          '-Dsonar.binaries=target/classes '          
+          sh '/opt/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner -Dproject.settings=./sonar-project.properties' 
         }
     }
     }
